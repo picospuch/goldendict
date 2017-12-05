@@ -345,7 +345,7 @@ HEADERS += folding.hh \
     ripemd.hh \
     gls.hh \
     splitfile.hh \
-    favoritespanewidget.hh
+    favoritespanewidget.hh \
     pProbe.hh
 
 FORMS += groups.ui \
@@ -473,7 +473,7 @@ SOURCES += folding.cc \
     ripemd.cc \
     gls.cc \
     splitfile.cc \
-    favoritespanewidget.cc
+    favoritespanewidget.cc \
     pProbe.cc
 
 win32 {

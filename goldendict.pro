@@ -346,6 +346,7 @@ HEADERS += folding.hh \
     gls.hh \
     splitfile.hh \
     favoritespanewidget.hh
+    pProbe.hh
 
 FORMS += groups.ui \
     dictgroupwidget.ui \
@@ -473,6 +474,7 @@ SOURCES += folding.cc \
     gls.cc \
     splitfile.cc \
     favoritespanewidget.cc
+    pProbe.cc
 
 win32 {
     FORMS   += texttospeechsource.ui

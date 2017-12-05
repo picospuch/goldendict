@@ -206,6 +206,7 @@ bool HotkeyWrapper::setGlobalKey( int key, int key2, Qt::KeyboardModifiers modif
   hotKeyID.id = nextId;
 
   OSStatus ret = RegisterEventHotKey( vk, mod, hotKeyID, GetApplicationEventTarget(), 0, &hk.hkRef );
+  qDebug("vk: %ld, %ld, %ld, %ld", vk, mod, hotKeyID, ret);
   if ( ret != 0 )
     return false;
 

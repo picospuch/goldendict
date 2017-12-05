@@ -2057,6 +2057,11 @@ QString getFavoritiesFileName() throw( exError )
   return getHomeDir().filePath( "favorites" );
 }
 
+QString getNewwordDbFileName() throw( exError )
+{
+  return getHomeDir().filePath("newword.db");
+}
+
 QString getUserCssFileName() throw( exError )
 {
   return getHomeDir().filePath( "article-style.css" );

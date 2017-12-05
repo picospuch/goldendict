@@ -5,6 +5,7 @@
 #include "epwing_book.hh"
 #endif
 
+#include "pProbe.hh"
 #include "mainwindow.hh"
 #include "editdictionaries.hh"
 #include "loaddictionaries.hh"
@@ -2215,6 +2216,7 @@ void MainWindow::translateInputFinished( bool checkModifiers, QString const & di
       addNewTab();
 
     showTranslationFor( word, 0, dictID );
+    recordToSqlite(word);
 
     if ( cfg.preferences.searchInDock )
     {
@@ -4018,6 +4020,7 @@ void MainWindow::focusWordList()
 
 void MainWindow::addWordToHistory( const QString & word )
 {
+    GD_DPRINTF("ADD TO HIST");
   history.addItem( History::Item( 1, word.trimmed() ) );
 }
 

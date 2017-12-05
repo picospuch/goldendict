@@ -679,6 +679,9 @@ QString getHistoryFileName() throw( exError );
 /// Returns the filename of a favorities file.
 QString getFavoritiesFileName() throw( exError );
 
+/// Retruns the filename of new word db.
+QString getNewwordDbFileName() throw( exError );
+
 /// Returns the user .css file name.
 QString getUserCssFileName() throw( exError );
 

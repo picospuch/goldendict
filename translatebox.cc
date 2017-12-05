@@ -11,6 +11,8 @@
 #include <QModelIndex>
 #include <QScrollBar>
 #include <QStyle>
+#include "pProbe.hh"
+#include "gddebug.hh"
 
 namespace
 {
@@ -80,6 +82,7 @@ bool CompletionList::acceptCurrentEntry()
   }
 
   emit doubleClicked(index);
+
   translateBox->setPopupEnabled( false );
 
   return true;

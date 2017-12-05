@@ -33,6 +33,7 @@
 #include <QString>
 
 #include "gddebug.hh"
+#include "pProbe.hh"
 
 #if defined( Q_OS_MAC ) && QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
 #include "lionsupport.h"
@@ -200,6 +201,7 @@ logFile( false )
 
 int main( int argc, char ** argv )
 {
+    qDebug() << "start!!!!\n";
   #ifdef Q_OS_MAC
     setenv("LANG", "en_US.UTF-8", 1);
 
